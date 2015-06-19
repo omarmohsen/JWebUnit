@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (c) 2002-2012, JWebUnit team.
+
+    This file is part of JWebUnit.
+
+    JWebUnit is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Lesser General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    JWebUnit is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public License
+    along with JWebUnit.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<faqs title="Frequently Asked Questions">
+
+  <part id="JavaScript">
+    <title>JavaScript</title>
+   
+    <faq id="javascript-support">
+      <question>
+        What about JWebUnit support of JavaScript?
+      </question>
+      <answer>
+        <p>JWebUnit uses a testing engine to manipulate DOM and JavaScript. That's why
+JavaScript support depend on the testing engine. In the past, JWebUnit was based on HttpUnit.
+JavaScript support of HttpUnit is very poor.<br/>
+Now, JWebUnit main testing engine is HtmlUnit. HtmlUnit understanding of JavaScript is quite good.</p>
+      </answer>
+    </faq>
+
+    <faq id="javascript-errors">
+      <question>
+        What can I do when JavaScript errors are thrown with JWebUnit (and HtmlUnit testing engine), but not in my browser?
+      </question>
+      <answer>
+        <p>First, check if your JavaScript is not browser specific. When possible, try to write a minimal test case that reproduce your error, and submit it to the HtmlUnit team to help them to improve HtmlUnit.<br/>
+Finally, you can temporary disable JavaScript in your test:</p>
+	<source>public void testFoo() {
+  beginAt("blabla");
+  ...
+  setScriptingEnabled(false);
+  ...//Problematic code
+  setScriptingEnabled(true);
+  ...
+}</source>
+Have a look at http://htmlunit.sourceforge.net/submittingJSBugs.html
+      </answer>
+    </faq>
+    
+    <faq id="javascript-json">
+      <question>
+      	How can I parse JSON output using JWebUnit or HtmlUnit?
+      </question>
+      <answer>
+        <p>HtmlUnit, one of the underlying engines of JWebUnit, <a href="http://stackoverflow.com/questions/2932857/html-handling-a-json-response">does not support direct
+        execution of Javascript functions</a>. You need to check beforehand that the <code>Content-Type</code>
+        of the response is <code>application/json</code>, and then use a different library to parse it.</p>
+        
+        <p>For example, <a href="http://code.google.com/p/google-gson/">Google Gson</a> can be used to parse JSON, as follows:</p>
+        
+        <source>WebResponse response = ((HtmlUnitTestingEngineImpl) JWebUnit.getTestingEngine()).getWebResponse();
+		
+// check content type
+assertTrue("Response type should be application/json, was: " + response.getContentType(), "application/json".equals(response.getContentType()));
+
+// parse JSON
+Gson gson = new Gson();
+String json = response.getContentAsString();
+JsonObject obj = new JsonParser().parse(json).getAsJsonObject(); // or JsonArray, depending on the JSON content
+
+assertTrue("Object should have success field", obj.has("success"));
+String success = gson.fromJson(obj.get("success"), String.class);
+String username = gson.fromJson(obj.get("username"), String.class);
+String type = gson.fromJson(obj.get("type"), String.class);
+// etc</source> 
+      </answer>
+    </faq>
+  </part>
+  
+    <part id="JUnitPerf">
+    <title>JUnitPerf</title>
+   
+    <faq id="junitperf-support">
+      <question>
+        Can I use JWebUnit coupled with JUnitPerf to do load testing?
+      </question>
+      <answer>
+        <p>Yes, but you have to take care when writing your JUnitPerf test. You need to use a TestFactory:</p>
+	<source>int users = 10;
+Test factory = new TestFactory(MyJWebUnitTest.class);
+Test loadTest = new LoadTest(factory, users);</source>
+      </answer>
+    </faq>
+  </part>
+  
+    <part id="HtmlUnit">
+    <title>HtmlUnit testing engine</title>
+   
+    <faq id="htmlunit-change-refreshhandler">
+      <question>
+        How can I change HtmlUnit refresh handler (default is ImmediateRefreshHandler)?
+      </question>
+      <answer>
+        <p>Warning: this is not something easily portable to other testing engine.</p>
+	<source>if (getTestingEngine() instanceof HtmlUnitTestingEngineImpl) {
+	HtmlUnitTestingEngineImpl engine = (HtmlUnitTestingEngineImpl) getTestingEngine();			
+	engine.setRefreshHandler(new ThreadedRefreshHandler());
+}</source>
+      </answer>
+    </faq>
+  </part>
+</faqs>

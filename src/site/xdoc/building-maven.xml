@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<!--
+
+    Copyright (c) 2002-2012, JWebUnit team.
+
+    This file is part of JWebUnit.
+
+    JWebUnit is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Lesser General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    JWebUnit is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public License
+    along with JWebUnit.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<document>
+    <properties>
+        <author>Julien Henry</author>
+        <title>Building JWebUnit</title>
+    </properties>
+    <body class="default">
+        <section name="Building JWebUnit">
+            <p>
+                In order to build JWebUnit, you need to
+                have Maven installed. This should not be any more
+                difficult than installing ant. We've included a best
+                practice installation and configuration for Maven.
+            </p>
+            <subsection name="Installing Sun JDK 1.5">
+                <p>
+                    JWebUnit is compiled with JDK 1.5 to ensure compatibility.
+                </p>
+                <p>
+                    You need to download and install latest Sun JDK 1.5 for your platform. 
+                    Let's say the JDK location is: 
+                    <source>/opt/jdk1.5.0_22</source>
+                </p>
+            </subsection>
+            <subsection name="Installing Maven">
+                <p>
+                    First you need to download the latest Maven, which
+                    currently is
+                    <a href="http://maven.apache.org">
+                        <tt>Maven-3.0</tt>
+                    </a>
+                    , make sure you download the binary archive
+                    (e.g. apache-maven-3.0-bin.tar.bz2).
+                </p>
+                <p>
+                    Installing Maven should be easy: extract the file to
+                    any directory you like, let's say:
+                    <source>/opt/apache-maven-3.0</source>
+                </p>
+                <p>
+                    Next you need to do 2 things:
+                    <ul>
+                        <li>
+                            add an environment variable M2_HOME which
+                            points to the install directory of Maven,
+                            i.e. /opt/apache-maven-3.0
+                        </li>
+                        <li>
+                            add
+                            <tt>$M2_HOME/bin</tt> (Linux) or <tt>%M2_HOME%\bin</tt> (Windows)
+                            to your path (using the variable you can
+                            switch more easily when a new version
+                            arrives)
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    You can test that Maven is correctly installed by running in a shell:
+                    <tt>mvn -v</tt>
+                </p>
+            </subsection>
+            <subsection name="Configure Maven toolchains">
+                <p>
+                    You can run Maven with any JDK (let's say JDK 1.6) but JWebUnit should be compiled
+                    with JDK 1.5. To achieve this we are using <a href="http://maven.apache.org/guides/mini/guide-using-toolchains.html">Maven toolchains mecanism</a>.
+                </p>
+                <p>
+                    Create a file <tt>~/.m2/toolchains.xml</tt> with the given content:                    
+                </p>
+                <source><![CDATA[
+<?xml version="1.0" encoding="UTF8"?>
+<toolchains>
+  <toolchain>
+     <type>jdk</type>
+     <provides>
+         <version>1.5</version>
+         <vendor>sun</vendor>
+         <id>1.5</id>
+     </provides>
+     <configuration>
+        <jdkHome>/opt/jdk1.5.0_22</jdkHome>
+     </configuration>
+  </toolchain>
+</toolchains>]]>                
+                </source>
+                <p>
+                    You should of course define the correct jdkHome for you.                    
+                </p>
+            </subsection>
+            <subsection name="Using Maven">
+                <p>
+                    Maven defines several goals, for creating and
+                    building your application. A goal is similar to an
+                    Ant-task. For instance: to compile the java sources
+                    one could do:
+                    <source>mvn compile</source>
+                    Also, a goal can depend on other goals: the
+                    <tt>package</tt>
+                    goal depends on running the unit tests and
+                    compilation of the code.
+                </p>
+                <p>
+                    See the
+                    <a href="http://maven.apache.org">Maven site</a>
+                    for more information on the different goals and
+                    plugins that are available.
+                </p>
+            </subsection>
+            <subsection name="Building JWebUnit">
+                <p>
+                    Building JWebUnit merely consist of running Maven:
+                    <source>mvn install</source>
+                </p>
+                <p>
+                    You now have successfully built JWebUnit. The files
+                    are in your private repository. To remove all traces of
+                    generated files, allowing your repository to install from
+                    scratch, use:
+                    <source>mvn clean</source>
+                </p>
+            </subsection>
+            <subsection name="Testing JWebUnit">
+                <p>
+                	JWebUnit is supported with a suite of test cases, which
+                	ensure that the testing framework works as expected.
+                	These tests are run through Maven by running:
+                    <source>mvn test</source>
+                </p>
+            </subsection>
+            <subsection name="Using Eclipse">
+                <p>
+                	If you are using the <a href="http://www.eclipse.org">Eclipse IDE</a>
+                	to develop the JWebUnit plugin,
+                	you can use <a href="http://m2eclipse.sonatype.org/">m2eclipse</a>.
+                </p>
+            </subsection>
+            <subsection name="Building Sourceforge upload bundle">
+                <p>
+                    For those who don't want to use Maven, we have to
+                    provide a zip with all required files.
+                    <source>mvn package assembly:assembly</source>
+                </p>
+                <p>The files are in target directory.</p>
+            </subsection>
+            <subsection name="Building JWebUnit Web site and reports">
+                <p>
+                Due to findbugs memory usage, following parameter is required:
+                <source>export MAVEN_OPTS=-Xmx384M</source>
+                Now you should be able to generate site:
+                    <source>mvn site</source>
+                </p>
+                <p>The files are in target/site directory of each module.<br/>
+                If you want to test the final assembled site, just hit:</p>
+                <source>mvn site:stage -DstagingDirectory=C:\fullsite</source>
+                <p>You can of course customize the destination folder of the assembled site.</p>
+                
+                <p>If it is taking a long time to build the dependencies report of each plugin,
+                you can disable it by adding the following parameter (<a href="http://www.nabble.com/Skipping-dependency-report-during-Maven2-site-generation-td20116761.html">reference</a>):
+                	<source>-Ddependency.locations.enabled=false</source>
+                This will disable the generation of dependency locations in the report and may
+                reduce site generation time significantly.
+                </p>
+            </subsection>
+        </section>
+    </body>
+</document>

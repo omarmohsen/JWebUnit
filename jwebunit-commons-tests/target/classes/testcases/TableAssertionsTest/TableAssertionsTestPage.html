@@ -1,0 +1,54 @@
+<!--
+
+    Copyright (c) 2002-2012, JWebUnit team.
+
+    This file is part of JWebUnit.
+
+    JWebUnit is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Lesser General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    JWebUnit is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public License
+    along with JWebUnit.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<html>
+<head>
+<title>This is a test page.</title>
+</head>
+	<body>
+
+		<table id="testTable">
+			<tr><td>table text</td></tr>
+			<tr><td>table text row 2</td></tr>
+			<tr><td>table text row 3</td><td>row 3 col 1</td></tr>
+			<a href="someurl.html">test link</a>
+			<form>
+				<input type="text" name="testInputElement" value="testValue"/>
+				<input type="submit" name="submitButton" value="buttonLabel"/>
+				<input type="checkbox" name="checkboxselected" CHECKED>
+				<input type="checkbox" name="checkboxnotselected">
+			</form>
+			
+			<form name="form2">
+			</form>
+			
+		</table>
+		
+		<table id="tree"><tbody>
+			<tr><td>root</td><td>&nbsp;</td>
+			<td><!-- Empty --></td></tr>
+			<tr><td><a href="">child1</a><a href=""> ;semicolon</a></td><td>&nbsp;</td>
+			<td>child2</td><td>&nbsp;</td></tr>
+			<tr><td>child1.1</td><td></td>
+			<td>child2.1</td><td>child2.2</td></tr>
+			</tbody>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="13.073" errors="0" skipped="0" tests="251" name="net.sourceforge.jwebunit.htmlunit.JWebUnitTest">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="23.2-b09"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/om/Downloads/jwebunit-3.1"/>
+    <property name="java.runtime.version" value="1.7.0_07-b30"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="3.5.0-17-generic"/>
+    <property name="user.home" value="/home/om"/>
+    <property name="user.timezone" value="Africa/Cairo"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="user.name" value="om"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_07"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/netx.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/plugin.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase time="0.196" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testCheckBoxSelectionWithSameFieldName"/>
+  <testcase time="0.095" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testCheckBoxDeSelectionWithSameFieldName"/>
+  <testcase time="0.106" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testSetTextField"/>
+  <testcase time="0.121" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testTextFieldSetOnMultiFormWithSameName"/>
+  <testcase time="0.041" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testSetWorkingFormById"/>
+  <testcase time="0.034" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testSetWorkingFormWithSameName"/>
+  <testcase time="0.043" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testInvalidButton"/>
+  <testcase time="0.071" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testUnnamedSubmitOnSpecificForm"/>
+  <testcase time="0.063" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testNamedSubmitOnSpecificForm"/>
+  <testcase time="0.066" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testSubmissionReset"/>
+  <testcase time="0.024" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testSelectOption"/>
+  <testcase time="0.025" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testSelectOptionInAnotherForm"/>
+  <testcase time="0.022" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testSelectOptionByValue"/>
+  <testcase time="0.051" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testCachedForm"/>
+  <testcase time="0.042" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testClickButtonWithText1"/>
+  <testcase time="0.044" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testSetHiddenField"/>
+  <testcase time="0.087" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testSubmitImageInput"/>
+  <testcase time="0.043" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testSubmitImageInputByName"/>
+  <testcase time="0.05" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testCheckBoxSelection"/>
+  <testcase time="0.066" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testSetTextArea"/>
+  <testcase time="0.043" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testSetFileField"/>
+  <testcase time="0.04" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testCheckBoxDeselection"/>
+  <testcase time="0.057" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testRadioSelection"/>
+  <testcase time="0.035" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testSingleFormSingleUnnamedButtonSubmission"/>
+  <testcase time="0.035" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testSingleNamedButtonSubmission"/>
+  <testcase time="0.06" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testSingleFormMultipleButtonSubmission"/>
+  <testcase time="0.02" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testBogusParameter"/>
+  <testcase time="0.034" classname="net.sourceforge.jwebunit.tests.FormSubmissionTest" name="testParamSetOnMultiForm"/>
+  <testcase time="0.036" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertTextPresent"/>
+  <testcase time="0.035" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertMatch"/>
+  <testcase time="0.034" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertTextNotPresent"/>
+  <testcase time="0.032" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertNoMatch"/>
+  <testcase time="0.02" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertNoMatchFails"/>
+  <testcase time="0.024" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertLinkPresentWithText"/>
+  <testcase time="0.037" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertLinkNotPresentWithText"/>
+  <testcase time="0.016" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertLinkPresentWithTextN"/>
+  <testcase time="0.018" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertLinkNotPresentWithTextN"/>
+  <testcase time="0.017" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertLinkPresent"/>
+  <testcase time="0.015" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertLinkNotPresent"/>
+  <testcase time="0.044" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertLinkPresentWithImage"/>
+  <testcase time="0.029" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertLinkNotPresentWithImage"/>
+  <testcase time="0.019" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertElementPresent"/>
+  <testcase time="0.014" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertElementNotPresent"/>
+  <testcase time="0.016" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertTextNotInElement"/>
+  <testcase time="0.017" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertElementContainsText"/>
+  <testcase time="0.015" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertElementContainsTextInChild"/>
+  <testcase time="0.017" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertNoMatchInElement"/>
+  <testcase time="0.015" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertMatchInElement"/>
+  <testcase time="0.017" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertMatchInElementChild"/>
+  <testcase time="0.018" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertFormElementEquals"/>
+  <testcase time="0.014" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertTextFieldEquals"/>
+  <testcase time="0.016" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertHiddenFieldPresent"/>
+  <testcase time="0.018" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertFormElementMatch"/>
+  <testcase time="0.02" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertSelectedOptionEquals"/>
+  <testcase time="0.025" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertSelectedOptionMatch"/>
+  <testcase time="0.022" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertTitleMatch"/>
+  <testcase time="0.019" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertTitleNotEquals"/>
+  <testcase time="0.015" classname="net.sourceforge.jwebunit.tests.WebAssertionsTest" name="testAssertTitleEquals"/>
+  <testcase time="0.033" classname="net.sourceforge.jwebunit.tests.FramesAndWindowsTest" name="testOpenWindow"/>
+  <testcase time="0.027" classname="net.sourceforge.jwebunit.tests.FramesAndWindowsTest" name="testGotoWindow"/>
+  <testcase time="0.026" classname="net.sourceforge.jwebunit.tests.FramesAndWindowsTest" name="testGotoWindowByTitle"/>
+  <testcase time="0.024" classname="net.sourceforge.jwebunit.tests.FramesAndWindowsTest" name="testAssertWindowWithTitle"/>
+  <testcase time="0.03" classname="net.sourceforge.jwebunit.tests.FramesAndWindowsTest" name="testCloseWindow"/>
+  <testcase time="0.024" classname="net.sourceforge.jwebunit.tests.FramesAndWindowsTest" name="testAssertWindowCountEquals"/>
+  <testcase time="0.056" classname="net.sourceforge.jwebunit.tests.FramesAndWindowsTest" name="testGotoFrame"/>
+  <testcase time="0.055" classname="net.sourceforge.jwebunit.tests.FramesAndWindowsTest" name="testGetFrameSource"/>
+  <testcase time="0.045" classname="net.sourceforge.jwebunit.tests.FramesAndWindowsTest" name="testGotoFrameById"/>
+  <testcase time="0.027" classname="net.sourceforge.jwebunit.tests.FramesAndWindowsTest" name="testGotoInlineFrame"/>
+  <testcase time="0.063" classname="net.sourceforge.jwebunit.tests.FramesAndWindowsTest" name="testFormInputInFrame"/>
+  <testcase time="0.035" classname="net.sourceforge.jwebunit.tests.FramesAndWindowsTest" name="testFormInputInInlineFrame"/>
+  <testcase time="0.026" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testAssertTextArrayNotInTable"/>
+  <testcase time="0.019" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testAssertNoMatchInTable"/>
+  <testcase time="0.018" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testAssertMatchArrayInTable"/>
+  <testcase time="0.019" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testAssertNoMatchArrayInTable"/>
+  <testcase time="0.02" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testAssertTableEquals"/>
+  <testcase time="0.017" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testAssertTableRowCountEquals"/>
+  <testcase time="0.015" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testAssertTableEqualsExtraColumn"/>
+  <testcase time="0.011" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testAssertTableEqualsExtraRow"/>
+  <testcase time="0.013" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testAssertTableEqualsInvalidColumnText"/>
+  <testcase time="0.041" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testAssertTableEqualsMissingText"/>
+  <testcase time="0.015" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testAssertTableRowsEquals"/>
+  <testcase time="0.013" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testAssertTableRowsEqualsTooManyExpected"/>
+  <testcase time="0.015" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testTableWithSpaces"/>
+  <testcase time="0.013" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testAssertTableMatch"/>
+  <testcase time="0.014" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testAssertTableMatchExtraColumn"/>
+  <testcase time="0.016" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testAssertTableMatchExtraRow"/>
+  <testcase time="0.015" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testAssertTableMatchInvalidColumnText"/>
+  <testcase time="0.011" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testAssertTableMatchMissingText"/>
+  <testcase time="0.018" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testAssertTableRowsMatch"/>
+  <testcase time="0.012" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testAssertTableRowsMatchTooManyExpected"/>
+  <testcase time="0.013" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testTableWithSpacesMatch"/>
+  <testcase time="0.017" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testAssertTablePresent"/>
+  <testcase time="0.015" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testAssertTableNotPresent"/>
+  <testcase time="0.012" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testAssertTextInTable"/>
+  <testcase time="0.011" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testAssertTextNotInTable"/>
+  <testcase time="0.013" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testAssertTextArrayInTable"/>
+  <testcase time="0.016" classname="net.sourceforge.jwebunit.tests.TableAssertionsTest" name="testAssertMatchInTable"/>
+  <testcase time="0.013" classname="net.sourceforge.jwebunit.tests.ExpectedTableAssertionsHtmlTest" name="testAssertTableEquals"/>
+  <testcase time="0.011" classname="net.sourceforge.jwebunit.tests.ExpectedTableAssertionsHtmlTest" name="testAssertTableEqualsMissingRows"/>
+  <testcase time="0.014" classname="net.sourceforge.jwebunit.tests.ExpectedTableAssertionsXHtmlTest" name="testAssertTableEquals"/>
+  <testcase time="0.015" classname="net.sourceforge.jwebunit.tests.ExpectedTableAssertionsXHtmlTest" name="testAssertTableEqualsMissingRows"/>
+  <testcase time="0.025" classname="net.sourceforge.jwebunit.tests.JavaScriptEventsTest" name="testFormOnSubmit"/>
+  <testcase time="0.037" classname="net.sourceforge.jwebunit.tests.JavaScriptEventsTest" name="testFormOnReset"/>
+  <testcase time="0.029" classname="net.sourceforge.jwebunit.tests.JavaScriptEventsTest" name="testButtonOnClick"/>
+  <testcase time="0.028" classname="net.sourceforge.jwebunit.tests.JavaScriptEventsTest" name="testJavaScriptInFile"/>
+  <testcase time="0.06" classname="net.sourceforge.jwebunit.tests.JavaScriptEventsTest" name="testLinkAssertsWorkJavascriptDisabled"/>
+  <testcase time="0.028" classname="net.sourceforge.jwebunit.tests.JavaScriptEventsTest" name="testLinkClickSetsWindowLocation"/>
+  <testcase time="0.023" classname="net.sourceforge.jwebunit.tests.JavaScriptEventsTest" name="testOnChangeSetsWindowLocation"/>
+  <testcase time="0.023" classname="net.sourceforge.jwebunit.tests.JavaScriptEventsTest" name="testGreenLink"/>
+  <testcase time="0.022" classname="net.sourceforge.jwebunit.tests.JavaScriptEventsTest" name="testFormOnSubmitSetTarget"/>
+  <testcase time="0.013" classname="net.sourceforge.jwebunit.tests.JavaScriptTest" name="testDocumentWrite"/>
+  <testcase time="0.019" classname="net.sourceforge.jwebunit.tests.JavaScriptTest" name="testAlert"/>
+  <testcase time="0.011" classname="net.sourceforge.jwebunit.tests.JavaScriptTest" name="testInvalidAlertOnPageLoad"/>
+  <testcase time="0.016" classname="net.sourceforge.jwebunit.tests.JavaScriptTest" name="testConfirm"/>
+  <testcase time="0.01" classname="net.sourceforge.jwebunit.tests.JavaScriptTest" name="testMultipleAlerts"/>
+  <testcase time="0.012" classname="net.sourceforge.jwebunit.tests.JavaScriptTest" name="testPrompt"/>
+  <testcase time="0.011" classname="net.sourceforge.jwebunit.tests.JavaScriptTest" name="testPromptCanceled"/>
+  <testcase time="0.025" classname="net.sourceforge.jwebunit.tests.JavaScriptTest" name="testUserAgent"/>
+  <testcase time="1.067" classname="net.sourceforge.jwebunit.tests.JavaScriptTest" name="testPrototypeJs"/>
+  <testcase time="0.008" classname="net.sourceforge.jwebunit.tests.HelloWorldTest" name="testTitle"/>
+  <testcase time="0.013" classname="net.sourceforge.jwebunit.tests.HtmlParsingTest" name="testInvalidForm"/>
+  <testcase time="0.016" classname="net.sourceforge.jwebunit.tests.HtmlParsingTest" name="testInvalidFormNoDoctype"/>
+  <testcase time="0.019" classname="net.sourceforge.jwebunit.tests.HtmlParsingTest" name="testValidComplexForm"/>
+  <testcase time="0.012" classname="net.sourceforge.jwebunit.tests.HtmlParsingTest" name="testValidFormNoDoctype"/>
+  <testcase time="0.01" classname="net.sourceforge.jwebunit.tests.HtmlParsingTest" name="testXhtmlStrict"/>
+  <testcase time="0.013" classname="net.sourceforge.jwebunit.tests.HtmlParsingTest" name="testSimpleForm"/>
+  <testcase time="0.017" classname="net.sourceforge.jwebunit.tests.WebCookieTest" name="testAddCookie"/>
+  <testcase time="0.011" classname="net.sourceforge.jwebunit.tests.WebCookieTest" name="testAddAnotherCookie"/>
+  <testcase time="0.011" classname="net.sourceforge.jwebunit.tests.WebCookieTest" name="testAssertCookiePresent"/>
+  <testcase time="0.017" classname="net.sourceforge.jwebunit.tests.WebCookieTest" name="testAssertCookieValue"/>
+  <testcase time="0.011" classname="net.sourceforge.jwebunit.tests.WebCookieTest" name="testAssertCookieMatch"/>
+  <testcase time="0.014" classname="net.sourceforge.jwebunit.tests.WebCookieTest" name="testCookieMatchLastCookie"/>
+  <testcase time="0.033" classname="net.sourceforge.jwebunit.tests.WebCookieTest" name="testCookieWithoutExplicitSet"/>
+  <testcase time="0.013" classname="net.sourceforge.jwebunit.tests.WebCookieTest" name="testCookieSetInHeaders"/>
+  <testcase time="0" classname="net.sourceforge.jwebunit.tests.TestContextTest" name="testInit"/>
+  <testcase time="0" classname="net.sourceforge.jwebunit.tests.TestContextTest" name="testResourceBundle"/>
+  <testcase time="0.108" classname="net.sourceforge.jwebunit.tests.TestContextTest" name="testServerSideUserAgentOverride"/>
+  <testcase time="0.018" classname="net.sourceforge.jwebunit.tests.TestContextTest" name="testClientSideUserAgentOverride"/>
+  <testcase time="0.02" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertFormElementEquals"/>
+  <testcase time="0.018" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertSelectedOptionEquals"/>
+  <testcase time="0.011" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertButtonWithTextPresent"/>
+  <testcase time="0.028" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertFormParameterPresent"/>
+  <testcase time="0.054" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertFormParameterNotPresent"/>
+  <testcase time="0.059" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertFormPresent"/>
+  <testcase time="0.039" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertFormPresentByName"/>
+  <testcase time="0.08" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testCheckboxSelected"/>
+  <testcase time="0.058" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testCheckboxSelectedByName"/>
+  <testcase time="0.075" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testCheckboxNotSelected"/>
+  <testcase time="0.103" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testCheckboxNotSelectedByName"/>
+  <testcase time="0.042" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertSubmitButtonPresent"/>
+  <testcase time="0.044" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertSubmitButtonNotPresent"/>
+  <testcase time="0.034" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertSubmitButtonValue"/>
+  <testcase time="0.04" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertResetButtonPresent"/>
+  <testcase time="0.034" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertResetButtonNotPresent"/>
+  <testcase time="0.048" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertRadioOptionPresent"/>
+  <testcase time="0.064" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertRadioOptionNotPresent"/>
+  <testcase time="0.06" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertRadioOptionSelected"/>
+  <testcase time="0.032" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertRadioOptionNotSelected"/>
+  <testcase time="0.03" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertSelectOptionPresent"/>
+  <testcase time="0.028" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertSelectOptionNotPresent"/>
+  <testcase time="0.027" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertSelectOptionValuePresent"/>
+  <testcase time="0.03" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertSelectOptionValueNotPresent"/>
+  <testcase time="0.077" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertSelectOptionsEqual"/>
+  <testcase time="0.052" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertSelectOptionsNotEqual"/>
+  <testcase time="0.03" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertSelectOptionValuesEqual"/>
+  <testcase time="0.05" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertSelectOptionValuesNotEqual"/>
+  <testcase time="0.063" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertSelectedOptionValueEquals"/>
+  <testcase time="0.035" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertButtonPresent"/>
+  <testcase time="0.021" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testAssertButtonNotPresent"/>
+  <testcase time="0.031" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testComplicatedElementNames"/>
+  <testcase time="0.032" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testIssue1996193"/>
+  <testcase time="0.13" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testLabels"/>
+  <testcase time="0.07" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testSetLabels"/>
+  <testcase time="0.03" classname="net.sourceforge.jwebunit.tests.FormAssertionsTest" name="testLabeledEmptyElement"/>
+  <testcase time="0.026" classname="net.sourceforge.jwebunit.tests.NavigationTest" name="testBeginAtRelative"/>
+  <testcase time="0.016" classname="net.sourceforge.jwebunit.tests.NavigationTest" name="testBeginAtAbsolute"/>
+  <testcase time="0.054" classname="net.sourceforge.jwebunit.tests.NavigationTest" name="testForwardSlashConfusion"/>
+  <testcase time="0.016" classname="net.sourceforge.jwebunit.tests.NavigationTest" name="testInvalidBeginAt"/>
+  <testcase time="0.041" classname="net.sourceforge.jwebunit.tests.NavigationTest" name="testClickLinkWithText"/>
+  <testcase time="0.086" classname="net.sourceforge.jwebunit.tests.NavigationTest" name="testClickLinkWithTextN"/>
+  <testcase time="0.045" classname="net.sourceforge.jwebunit.tests.NavigationTest" name="testClickLinkWithImage"/>
+  <testcase time="0.026" classname="net.sourceforge.jwebunit.tests.NavigationTest" name="testClickLinkWithImageAnd0Index"/>
+  <testcase time="0.047" classname="net.sourceforge.jwebunit.tests.NavigationTest" name="testClickLinkWithImageAnd1Index"/>
+  <testcase time="0.068" classname="net.sourceforge.jwebunit.tests.NavigationTest" name="testClickLinkByID"/>
+  <testcase time="0.04" classname="net.sourceforge.jwebunit.tests.NavigationTest" name="testInvalidClickLink"/>
+  <testcase time="0.055" classname="net.sourceforge.jwebunit.tests.NavigationTest" name="testGotoPageRelative"/>
+  <testcase time="0.042" classname="net.sourceforge.jwebunit.tests.NavigationTest" name="testGotoPageAbsolute"/>
+  <testcase time="0.065" classname="net.sourceforge.jwebunit.tests.NavigationTest" name="testInvalidGotoPage"/>
+  <testcase time="0.048" classname="net.sourceforge.jwebunit.tests.NavigationTest" name="testLinkWithEscapedText"/>
+  <testcase time="0.046" classname="net.sourceforge.jwebunit.tests.NavigationTest" name="testLinkExactText"/>
+  <testcase time="0.029" classname="net.sourceforge.jwebunit.tests.XPathTest" name="testAssertElementPresentByXPath"/>
+  <testcase time="0.041" classname="net.sourceforge.jwebunit.tests.XPathTest" name="testAssertElementNotPresentByXPath"/>
+  <testcase time="0.04" classname="net.sourceforge.jwebunit.tests.XPathTest" name="testClickElementByXPath"/>
+  <testcase time="0.02" classname="net.sourceforge.jwebunit.tests.XPathTest" name="testGetElementTextByXPath"/>
+  <testcase time="0.018" classname="net.sourceforge.jwebunit.tests.CharsetTest" name="testDollar"/>
+  <testcase time="0.015" classname="net.sourceforge.jwebunit.tests.CharsetTest" name="testYen"/>
+  <testcase time="0.039" classname="net.sourceforge.jwebunit.tests.CharsetTest" name="testPound"/>
+  <testcase time="0.037" classname="net.sourceforge.jwebunit.tests.CharsetTest" name="testEuro"/>
+  <testcase time="0.038" classname="net.sourceforge.jwebunit.tests.ButtonAssertionsTest" name="testHiddenButtonsAreStillFound"/>
+  <testcase time="0.023" classname="net.sourceforge.jwebunit.tests.ButtonAssertionsTest" name="testAssertButtonwithOneFormfound"/>
+  <testcase time="0.023" classname="net.sourceforge.jwebunit.tests.ButtonAssertionsTest" name="testAssertButtonwithTwoFormsFound"/>
+  <testcase time="0.028" classname="net.sourceforge.jwebunit.tests.ButtonAssertionsTest" name="testAssertButtonWithText"/>
+  <testcase time="0.025" classname="net.sourceforge.jwebunit.tests.NonHtmlContentTest" name="testTextContent"/>
+  <testcase time="0.048" classname="net.sourceforge.jwebunit.tests.NonHtmlContentTest" name="testBinaryContent"/>
+  <testcase time="0.036" classname="net.sourceforge.jwebunit.tests.NonHtmlContentTest" name="testImageContent"/>
+  <testcase time="0.085" classname="net.sourceforge.jwebunit.tests.RedirectionTest" name="testRedirection"/>
+  <testcase time="0.802" classname="net.sourceforge.jwebunit.tests.ImageTest" name="testPngCanBeLoaded"/>
+  <testcase time="0.069" classname="net.sourceforge.jwebunit.tests.ImageTest" name="testJpgCanBeLoaded"/>
+  <testcase time="0.03" classname="net.sourceforge.jwebunit.tests.ImageTest" name="testFailsOnInvalidImages"/>
+  <testcase time="0.026" classname="net.sourceforge.jwebunit.tests.ImageTest" name="testSimpleImagePresenceAssertion"/>
+  <testcase time="0.079" classname="net.sourceforge.jwebunit.tests.ImageTest" name="testGifCanBeLoaded"/>
+  <testcase time="0.031" classname="net.sourceforge.jwebunit.tests.ImageTest" name="testAbsolutePath"/>
+  <testcase time="0.346" classname="net.sourceforge.jwebunit.tests.ImageTest" name="testSavesImage"/>
+  <testcase time="0.021" classname="net.sourceforge.jwebunit.tests.ImageTest" name="testImagesAreExposed"/>
+  <testcase time="0.068" classname="net.sourceforge.jwebunit.tests.ImageTest" name="testRelativePathsAreCorrectlyResolved"/>
+  <testcase time="0.011" classname="net.sourceforge.jwebunit.tests.ResourceBundleAssertionsTest" name="testAssertTextNotPresent"/>
+  <testcase time="0.015" classname="net.sourceforge.jwebunit.tests.ResourceBundleAssertionsTest" name="testGetMessage"/>
+  <testcase time="0.011" classname="net.sourceforge.jwebunit.tests.ResourceBundleAssertionsTest" name="testGetMessageWithArg"/>
+  <testcase time="0.012" classname="net.sourceforge.jwebunit.tests.ResourceBundleAssertionsTest" name="testGetFormattedMessage"/>
+  <testcase time="0.011" classname="net.sourceforge.jwebunit.tests.ResourceBundleAssertionsTest" name="testGetLocalizedFormattedMessage"/>
+  <testcase time="0.012" classname="net.sourceforge.jwebunit.tests.ResourceBundleAssertionsTest" name="testAssertTitleEqualsKey"/>
+  <testcase time="0.01" classname="net.sourceforge.jwebunit.tests.ResourceBundleAssertionsTest" name="testAssertTitleEqualsKeyWithArg"/>
+  <testcase time="0.01" classname="net.sourceforge.jwebunit.tests.ResourceBundleAssertionsTest" name="testAssertKeyPresent"/>
+  <testcase time="0.017" classname="net.sourceforge.jwebunit.tests.ResourceBundleAssertionsTest" name="testAssertKeyPresentWithArg"/>
+  <testcase time="0.01" classname="net.sourceforge.jwebunit.tests.ResourceBundleAssertionsTest" name="testAssertNotKeyPresent"/>
+  <testcase time="0.012" classname="net.sourceforge.jwebunit.tests.ResourceBundleAssertionsTest" name="testAssertKeyNotPresentWithArg"/>
+  <testcase time="0.011" classname="net.sourceforge.jwebunit.tests.ResourceBundleAssertionsTest" name="testAssertKeyInTable"/>
+  <testcase time="0.024" classname="net.sourceforge.jwebunit.tests.ResourceBundleAssertionsTest" name="testAssertKeyInTableWithArgs"/>
+  <testcase time="0.009" classname="net.sourceforge.jwebunit.tests.ResourceBundleAssertionsTest" name="testAssertKeyNotInTable"/>
+  <testcase time="0.01" classname="net.sourceforge.jwebunit.tests.ResourceBundleAssertionsTest" name="testAssertKeysInTable"/>
+  <testcase time="0.01" classname="net.sourceforge.jwebunit.tests.ResourceBundleAssertionsTest" name="testAssertKeysInTableWithArgs"/>
+  <testcase time="0.104" classname="net.sourceforge.jwebunit.tests.SelectOptionsTest" name="testSelectOptionsOneForm"/>
+  <testcase time="0.088" classname="net.sourceforge.jwebunit.tests.SelectOptionsTest" name="testAssertSelectOptionsOneForm"/>
+  <testcase time="0.076" classname="net.sourceforge.jwebunit.tests.SelectOptionsTest" name="testAssertSelectOptionsTwoForms"/>
+  <testcase time="0.017" classname="net.sourceforge.jwebunit.tests.IElementTest" name="testSimple"/>
+  <testcase time="0.024" classname="net.sourceforge.jwebunit.tests.IElementTest" name="testMissing"/>
+  <testcase time="0.013" classname="net.sourceforge.jwebunit.tests.IElementTest" name="testChildrenAndParent"/>
+  <testcase time="0.024" classname="net.sourceforge.jwebunit.tests.IElementTest" name="testMultiple"/>
+  <testcase time="0.024" classname="net.sourceforge.jwebunit.tests.IElementTest" name="testChanging"/>
+  <testcase time="0.024" classname="net.sourceforge.jwebunit.tests.IElementTest" name="testWithXpath"/>
+  <testcase time="0.021" classname="net.sourceforge.jwebunit.tests.IElementTest" name="testAttributeJavascript"/>
+  <testcase time="0.036" classname="net.sourceforge.jwebunit.tests.IElementTest" name="testComments"/>
+  <testcase time="0.043" classname="net.sourceforge.jwebunit.tests.IElementTest" name="testPreceding"/>
+  <testcase time="0.04" classname="net.sourceforge.jwebunit.tests.IElementTest" name="testIElementEquals"/>
+  <testcase time="0.044" classname="net.sourceforge.jwebunit.tests.ResponseServletTest" name="testResponse404"/>
+  <testcase time="0.051" classname="net.sourceforge.jwebunit.tests.ResponseServletTest" name="testResponse501"/>
+  <testcase time="1.561" classname="net.sourceforge.jwebunit.tests.ResponseServletTest" name="testTimeout"/>
+  <testcase time="0.016" classname="net.sourceforge.jwebunit.tests.ResponseServletTest" name="testDefault"/>
+  <testcase time="0.018" classname="net.sourceforge.jwebunit.tests.ResponseServletTest" name="testResponse200"/>
+  <testcase time="0.008" classname="net.sourceforge.jwebunit.tests.CustomTesterTest" name="testCustomTester"/>
+  <testcase time="1.222" classname="net.sourceforge.jwebunit.tests.ConcurrentJWebUnitTest" name="testClickLinkWithTextN"/>
+</testsuite>

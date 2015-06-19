@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>jwebunit</artifactId>
+        <groupId>net.sourceforge.jwebunit</groupId>
+        <version>3.1</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>jwebunit-commons-tests</artifactId>
+    <name>Commons Tests</name>
+    <description>All test cases that each plugin should pass.</description>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit-dep</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-library</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-webapp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.sourceforge.jwebunit</groupId>
+            <artifactId>jwebunit-core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.0.1</version>
+        </dependency>
+        <dependency>
+        	<groupId>com.google.code.tempus-fugit</groupId>
+        	<artifactId>tempus-fugit</artifactId>
+        	<version>1.1</version>
+        </dependency>
+    </dependencies>
+    <properties>
+        <topDirectoryLocation>..</topDirectoryLocation>
+        <!-- Prevents deployment as this module is not intended to be used by end-users -->
+        <maven.deploy.skip>true</maven.deploy.skip>
+    </properties>
+</project>
